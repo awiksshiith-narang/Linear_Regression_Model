@@ -11,10 +11,10 @@ X = X.reshape( len(X), 1 ) #Reshaping the vertical array to horizontal one
 Y = X.reshape( len(Y), 1 ) #Reshaping the vertical array to horizontal one
 
 #Splitting the data
-X_train = X[ : 14447 ]
-X_test = X[ 14447 : ]
-Y_train = Y[ : 14447 ]
-Y_test = Y[ 14447 : ]
+X_train = X[ : 14447 ] #First 14448 values will be the training data
+X_test = X[ 14447 : ]  #Rest values will be the testing data
+Y_train = Y[ : 14447 ] #First 14448 values will be the training data
+Y_test = Y[ 14447 : ]  #Rest values will be the testing data
 
 #Creating regression curve, training & testing the machine
 regr = linear_model.LinearRegression()
