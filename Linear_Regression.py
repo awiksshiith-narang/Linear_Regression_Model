@@ -25,7 +25,3 @@ plt.title( 'Price of House in California State with respect to number of rooms' 
 plt.xlabel( 'Number of Rooms' )
 plt.ylabel( 'Price of House' )
 plt.show() # Comparing the output value given by the machine and the actual output
-
-#Prediction for non pre_defined output
-print("Prediction of cost for a 2 room house:")
-print( regr.predict( 2 ) )
